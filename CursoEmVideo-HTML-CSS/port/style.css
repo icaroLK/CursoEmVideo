@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(75, 75, 75);
+}
+
+
+
+h1{
+    
+}
+
+hr{
+
+    width: 0px;
+    transition-timing-function: ease-out;
+    
+}

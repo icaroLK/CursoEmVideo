@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* estilo para telas */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu li {
+    display: inline-block;
+    padding: 7px 10px;
+    font-weight: bold;
+}
+
+li {
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.658);
+        cursor: pointer;
+    }
+}
+
+article{
+    width: 600px;
+    text-align: justify;
+    margin: auto;
+}

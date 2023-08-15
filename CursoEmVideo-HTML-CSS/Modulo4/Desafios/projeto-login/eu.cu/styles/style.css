@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*
+    azul: #3C6997
+    bege: #F4F1DE
+    brown: #4C402F
+
+
+
+*/
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px dashed red; */
+}
+
+
+body {
+    background-color: #4C402F;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    width: 260px;
+    margin-top: 50vh;
+    transform: translate(0%, -50%);
+    border-radius: 15px;
+    
+    font-size: 0.8em;
+    padding-bottom: 35px;
+
+}
+
+#form {
+    padding: 10px;
+}
+
+#imagem {
+    background: url(../images/abstract.jpg);
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+    
+}
+
+.input1, .input2{
+    background-color: #4C402F;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: text;
+}
+
+
+
+
+#prof, #chave {
+    color: white;
+    position: absolute;
+    padding-top: 2px;
+    padding-left: 2px;
+    cursor: text;
+}
+
+
+#isenha, #iemail {
+    padding: 6px;
+    margin-left: 30px;
+    width: 81.4%;
+    border-radius: 5px;
+    border: 0px;
+    /* box-sizing: content-box; */
+    /* background-color: #6885a1; */
+    /* &:hover{
+        border: 2px solid #53887c;
+    } */
+}
+
+#entrar {
+    width: 100%;
+    padding: 10px;
+    background-color: #53887c;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 0px;
+    
+    &:hover{
+        background-color: #30534b;
+    }
+}
+
+#esqueci {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #34574f;
+    border: 2px solid #53887c;
+    &:hover{
+        background-color: #8ddac8;
+        border: 2px solid #385e55;
+    }
+
+}
+
+
+
+
+
+main h1 {
+    text-align: center;
+    padding: 10px;
+}

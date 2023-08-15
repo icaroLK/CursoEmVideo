@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAHHAHAHHAHAHHAHHAHAHAHHAHHAHAHHAAHA</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        
+        body{
+            background-color: rgb(46, 88, 104);
+            display: flex;
+            justify-content: center;
+
+        }
+    
+        div{
+            display: flex;
+        }
+
+        div#area{
+            font: normal 5em Arial;
+            background-color: rgb(166, 192, 192);
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+        Interaja...
+    </div>
+    
+    <script>
+        var penis = window.document.getElementById('area')
+        var tudo = window.document.body
+
+        function clicar() {
+            penis.innerText = 'Clicou'
+            penis.style.backgroundColor = 'darkred'
+            penis.style.color = 'white'
+            tudo.style.justifyContent = 'center'
+        }
+
+        function entrar(){
+            penis.innerText = 'Entrou'
+            tudo.style.justifyContent = 'left'
+        }
+
+        function saiu(){
+            penis.innerText = 'Saiu'
+            penis.style.backgroundColor = ' rgb(166, 192, 192)'
+            penis.style.color = 'black'
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@charset "UFT-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Raleway:wght@100&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: tit;
+    src: url(font/PassionOne-Regular.ttf);
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+h1{
+    font-size: 10vw;
+    font-family: 'tit';
+}
+
+
+header p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+
+
+.poesia{
+    font-family: cursive;
+    margin: 20px 0px 20px 50px;
+    font-weight: bold;
+    padding: 80px 0px;
+    /* background-color: aqua; */
+    max-width: 40vw;
+    font-size: 3vw;
+    line-height: 2.2em;
+}
+
+.foto1 {  
+
+    background-image: url(imagens/background001.jpg);
+    position: absolute;
+    width: 98vw;
+    padding: 50px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    
+}
+
+
+.fundo{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 15px 8px;
+    
+}
+
+.foto2 {  
+
+    background-image: url(imagens/background002.jpg);
+    position: absolute;
+    width: 98vw;
+    padding: 50px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    
+}
+
+footer{
+    background-color: black;
+    height: 10px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

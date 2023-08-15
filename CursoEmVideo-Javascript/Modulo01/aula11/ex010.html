@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Verificando nacionalidade</h1>
+    <label for="pais">Digite seu país</label>
+    <input type="text" name="pais" id="pais" placeholder="Insira seu pais aqui">
+    <br>
+    <input type="submit" value="Enviar" onclick="verificar()">
+    <div id="penis"></div>
+
+    <script>
+        function verificar(){
+            var penis = document.getElementById('penis');
+            var text = window.document.getElementById('pais'); 
+            var pais = text.value.toUpperCase();
+
+        
+            if (pais !== 'BRASIL'){
+                penis.innerHTML = `Voce não é BR`;
+
+            } else{
+                penis.innerHTML = `Vc é BR vamooo`;
+            }
+        }
+
+    </script>
+</body>
+</html>

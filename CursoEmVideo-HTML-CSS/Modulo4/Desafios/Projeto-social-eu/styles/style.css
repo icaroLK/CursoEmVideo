@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* outline: red dashed 1px; */
+}
+
+
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+body {
+    /* background: url(imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed; */
+    background-color: rgba(0, 0, 0, 0.473);
+
+}
+
+
+
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+
+
+
+section#cell {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 800px;
+    width: 400px;
+    background: url(../imagens/iphone_temp.png) no-repeat;
+
+}
+
+iframe#tela{
+    position: relative;
+    top: 23px;
+    left: 27px;
+    width: 347px;
+    height: 751px;
+    border-radius: 34px;
+}
+
+
+
+
+
+
+section#redes {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: right;
+    
+
+}
+
+section#redes  img{
+    border-radius: 50%;
+    margin: 12px 5px;
+    max-width: 60px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
+    box-sizing: border-box;
+    &:hover{
+        border: 2px solid rgba(255, 255, 255, 0.651);
+        transform: translate(-5px, -5px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.651);
+        transition: transform 0.3s, border 1s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ERA MEU */
+
+
+   
+/* html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+#cell picture img{
+    display: flex;
+    position: absolute;
+    max-height: 99%;
+    margin: auto;
+
+    
+}
+
+
+
+#redes picture{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: right;
+    
+
+}
+
+#redes picture img{
+    border-radius: 50%;
+    margin: 12px 5px;
+    max-width: 60px;
+} */

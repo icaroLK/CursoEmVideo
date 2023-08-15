@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* 
+
+Mídias separadas 
+
+Typical Device Breakpoints
+    - Pequenas telas: até 600px
+    - Celular: 600px até 768px
+    - Tablet: 768px até 992px
+    - Desktop: 992px até 1200px
+    - Grandes telas: acima de 1200px 
+    
+*/
+
+
+
+
+
+/* @media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    
+}
+
+
+COMO JA FOI FEITO O MOBILE FIRST, NÃO PRECISA DISSO (A PÁGINA INICIAL É PRA CELULAR)
+*/
+
+
+
+@media print{ /*impressão*/
+    body{
+        background-image: url(../images/back-print.jpg); /*descnecessário */
+    
+    }
+
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+        font-size: 3em;
+    }
+
+    main{
+        border: 2px solid black;
+        padding-bottom: 400px;
+    }
+
+
+    main::after {
+        content: 'Essa impressão foi feita pelo pai esqueeeeece';
+    }
+
+
+
+    img#phone{ display: none; }
+    img#print{ display: block; }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*tablet*/
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+    img#phone{ display: none; }
+    img#tablet{ display: block; }
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*desktop*/
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+    img#phone{ display: none; }
+    img#pc{ display: block; }
+}
+
+
+
+@media screen and (min-width: 1200px){ /*grandes telas*/
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+    img#phone{ display: none; }
+    img#tv{ display: block; }
+}

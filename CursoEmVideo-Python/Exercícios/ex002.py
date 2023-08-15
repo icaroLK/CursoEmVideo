@@ -1,0 +1,5 @@
+n = input('Can you tell me your name? ')
+print('Hi ' + n + ', nice to meet you.')
+print('')
+name = input('What is your name? ')
+print('Nice to meet you, {}!' .format(name))
