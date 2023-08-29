@@ -1,0 +1,16 @@
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\bin\Debug\net6.0-windows\WindowsEx000.exe
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\bin\Debug\net6.0-windows\WindowsEx000.deps.json
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\bin\Debug\net6.0-windows\WindowsEx000.runtimeconfig.json
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\bin\Debug\net6.0-windows\WindowsEx000.dll
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\bin\Debug\net6.0-windows\WindowsEx000.pdb
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\WindowsEx000.Form1.resources
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\WindowsEx000.csproj.GenerateResource.cache
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\WindowsEx000.GeneratedMSBuildEditorConfig.editorconfig
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\WindowsEx000.AssemblyInfoInputs.cache
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\WindowsEx000.AssemblyInfo.cs
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\WindowsEx000.csproj.CoreCompileInputs.cache
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\WindowsEx000.dll
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\refint\WindowsEx000.dll
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\WindowsEx000.pdb
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\WindowsEx000.genruntimeconfig.cache
+C:\TimeTravelStuff\CursoEmVideo\CursoEmVideo-C#\WindowsEx000\WindowsEx000\obj\Debug\net6.0-windows\ref\WindowsEx000.dll
