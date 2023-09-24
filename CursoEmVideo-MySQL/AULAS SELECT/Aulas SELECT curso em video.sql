@@ -15,6 +15,89 @@ CREATE TABLE cursos (
 
 
 
+CREATE TABLE alunos (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	nome varchar(30) NOT NULL,
+	profissao varchar(20) DEFAULT NULL,
+	nascimento date DEFAULT NULL,
+	sexo enum('M','F') DEFAULT NULL,
+	peso decimal(5,2) DEFAULT NULL,
+	altura decimal(3,2) DEFAULT NULL,
+	nacionalidade varchar(20) DEFAULT 'Brasil'
+)AUTO_INCREMENT=62;
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*AULA 15*/
+/*--------------------------------------------------------------------------------------*/
+DROP TABLE alunos;
+
+
+ALTER TABLE alunos ADD COLUMN cursopreferido INT AFTER id;
+ALTER TABLE alunos ADD FOREIGN KEY (cursopreferido) REFERENCES cursos (idcurso);
+
+
+SELECT nome, cursopreferido FROM alunos;
+
+
+SELECT a.nome, c.nome FROM alunos AS a INNER JOIN cursos AS c ON a.cursopreferido = c.idcurso ORDER BY a.nome;
+
+SELECT a.nome, c.nome FROM alunos AS a INNER JOIN cursos AS c ON a.cursopreferido = c.idcurso;
+SELECT a.nome, c.nome FROM alunos AS a RIGHT OUTER JOIN cursos AS c ON a.cursopreferido = c.idcurso;
+
+SELECT * FROM alunos;
+SELECT * FROM cursos;
+
+DESCRIBE cursos;
+DESCRIBE alunos;
+/*--------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------*/
+/*AULA 16*/
+/*--------------------------------------------------------------------------------------*/
+
+CREATE TABLE aluno_assiste_curso(
+id INT PRIMARY KEY AUTO_INCREMENT,
+data DATE,
+id_aluno INT,
+id_curso INT,
+FOREIGN KEY (id_aluno) REFERENCES alunos (id),
+FOREIGN KEY (id_curso) REFERENCES cursos (idcurso)
+);
+
+SELECT * FROM aluno_assiste_curso;
+
+INSERT INTO aluno_assiste_curso VALUES (DEFAULT, '2020-01-01', 1, 2);
+
+INSERT INTO aluno_assiste_curso VALUES 
+(DEFAULT, '2020-01-01', 2, 2),
+(DEFAULT, '2020-01-01', 3, 6),
+(DEFAULT, '2020-01-01', 4, 9),
+(DEFAULT, '2020-01-01', 5, 16),
+(DEFAULT, '2020-01-01', 6, 23),
+(DEFAULT, '2020-01-01', 7, 12),
+(DEFAULT, '2020-01-01', 8, 12),
+(DEFAULT, '2020-01-01', 9, 12),
+(DEFAULT, '2020-01-01', 10, 10),
+(DEFAULT, '2020-01-01', 11, 1),
+(DEFAULT, '2020-01-01', 12, 4),
+(DEFAULT, '2020-01-01', 13, 5),
+(DEFAULT, '2020-01-01', 14, 6)
+;
+
+
+
+SELECT aac.id, a.nome, c.nome FROM aluno_assiste_curso AS aac INNER JOIN alunos AS a ON a.id = aac.id_aluno INNER JOIN cursos AS c ON c.idcurso = aac.id_curso;
+
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
 INSERT INTO cursos (idcurso, nome, descricao, carga, totaulas, ano) VALUES
 (1, 'HTML5', 'Curso de HTML5', 40, 37, 2014),
 (2, 'Algoritmos', 'Lógica de Programação', 20, 15, 2014),
@@ -46,20 +129,6 @@ INSERT INTO cursos (idcurso, nome, descricao, carga, totaulas, ano) VALUES
 (28, 'HTML4', 'Curso Básico de HTML, versão 4.0', 20, 9, 2010),
 (29, 'PHP7', 'Curso de PHP, versão 7.0', 40, 20, 2020),
 (30, 'PHP4', 'Curso de PHP, versão 4.0', 30, 11, 2010);
-
-
-
-
-CREATE TABLE alunos (
-	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	nome varchar(30) NOT NULL,
-	profissao varchar(20) DEFAULT NULL,
-	nascimento date DEFAULT NULL,
-	sexo enum('M','F') DEFAULT NULL,
-	peso decimal(5,2) DEFAULT NULL,
-	altura decimal(3,2) DEFAULT NULL,
-	nacionalidade varchar(20) DEFAULT 'Brasil'
-)AUTO_INCREMENT=62;
 
 
 
@@ -188,13 +257,6 @@ HAVING count(ano) >=3
 ORDER BY count(*) desc;
 
 
-
-
-
-
-
-
-
 /*EX1*/ 
 /*Lista com as profissões dos alunos e a quantidade de alunos em cada uma delas (ordem decresente da quantiade de pessoas em cada curso)*/
 SELECT profissao, count(*) FROM alunos GROUP BY profissao ORDER BY count(*) desc;
@@ -216,14 +278,26 @@ SELECT nacionalidade, count(*) FROM alunos WHERE nacionalidade != 'Brasil' GROUP
 /*Uma lista agrupada pela altura dos alunos, 
 mosntrando quantas pessoas tem mais de 100kg 
 e que estão acima da média de altura de todos cadastrados*/
-
 SELECT AVG(altura) FROM alunos; /*Média de altura de todos*/
-
 SELECT altura, count(*) FROM alunos 
 WHERE peso > 100 
 GROUP BY altura 
 HAVING altura > (SELECT AVG(altura) FROM alunos) 
 ORDER BY altura desc;
+
+
+/*--------------------------------------------------------------------------------------*/
+/*AULA 15*/
+/*--------------------------------------------------------------------------------------*/
+
+
+/*ALUNO   n        prefe       1   CURSO */
+
+
+
+
+
+
 
 
 
